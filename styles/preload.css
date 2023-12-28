@@ -2,16 +2,21 @@
 	background-color: var(--white-color);
 	width: 100svw;
 	height: 100svh;
-	position: absolute;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99999;
 }
 
 .load {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-4rem, -4rem);
 	width: 100px;
 	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .load hr {

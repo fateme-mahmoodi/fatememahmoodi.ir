@@ -70,4 +70,5 @@ document.querySelector("body").addEventListener("contextmenu", (e) => {
 window.onload = () => {
 	document.querySelector(".preloader").style.display = "none";
 	document.querySelector("header").style.display = "flex";
+	window.scrollTo({ top: 0, left: 0 });
 };
