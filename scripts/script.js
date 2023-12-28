@@ -65,3 +65,9 @@ obs.observe(sectionHeroEl);
 document.querySelector("body").addEventListener("contextmenu", (e) => {
 	e.preventDefault();
 });
+
+
+window.onload = () => {
+	document.querySelector(".preloader").style.display = "none";
+	document.querySelector("header").style.display = "flex";
+};
