@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="title" content="فاطمه محمودی" />
+		<meta
+			name="description"
+			content="دنیای زیبایی را در کلینیک زیبایی ما پرده برداری کنید، جایی که خدمات زیبایی و درمانی فوق العاده متناسب با نیازهای شما ارائه می شود."
+		/>
+		<meta
+			name="keywords"
+			content="زیبایی و درمانی ,درمان ,کلینیک زیبایی ,خدمات زیبایی درمانی ,خدمات سلامتی درمانی زیبایی ,خدمات انحصاری ,دنیای زیبایی ,زیبایی و سلامت ,کلینیک ,زیبایی ,انحصاری ,خدمات ,فوق العاده ,خدمات زیبایی"
+		/>
+		<meta name="robots" content="index, follow" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="revisit-after" content="3 days" />
+		<meta name="author" content="Ali Almasi" />
+
+		<title>Fateme Mahmoodi</title>
+		<link rel="stylesheet" href="../styles/general.css" />
+		<link rel="stylesheet" href="../styles/done.css" />
+		<link rel="stylesheet" href="../styles/queries.css" />
+		<link rel="stylesheet" href="../styles/darkmode.css" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="194x194"
+			href="/favicon-194x194.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="/android-chrome-192x192.png"
+		/>
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e08076" />
+		<meta name="apple-mobile-web-app-title" content="Fateme Mahmoodi" />
+		<meta name="application-name" content="Fateme Mahmoodi" />
+		<meta name="msapplication-TileColor" content="#e08076" />
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+	</head>
+
+	<body>
+		<script>
+			function calculateSettingAsThemeString({
+				localStorageTheme,
+				systemSettingDark,
+			}) {
+				if (localStorageTheme !== null) {
+					return localStorageTheme;
+				}
+
+				if (systemSettingDark.matches) {
+					return "dark";
+				}
+
+				return "light";
+			}
+
+			function updateThemeOnHtmlEl({ theme }) {
+				document.querySelector("html").setAttribute("data-theme", theme);
+				document.documentElement.classList.add("theme-in-transition");
+				document.documentElement.setAttribute("data-theme", theme);
+				window.setTimeout(function () {
+					document.documentElement.classList.remove("theme-in-transition");
+				}, 1000);
+			}
+
+			const localStorageTheme = localStorage.getItem("theme");
+
+			const systemSettingDark = window.matchMedia(
+				"(prefers-color-scheme: dark)"
+			);
+
+			let currentThemeSetting = calculateSettingAsThemeString({
+				localStorageTheme,
+				systemSettingDark,
+			});
+
+			updateThemeOnHtmlEl({ theme: currentThemeSetting });
+		</script>
+		<main>
+			<section class="container">
+				<h1 class="header-primary">متشکریم!</h1>
+				<h2 class="header-secondary">
+					اطلاعات شما با موفقیت ثبت شد.<br />در اسرع وقت، با شما تماس خواهیم
+					گرفت.
+				</h2>
+				<h3 class="subheading margin-bottom-md">
+					همچنین، شما میتوانید با شماره تلفن
+					<a href="tel:+989904386818" class="link">0990-438-6818</a> تماس حاصل
+					نمایید.
+				</h3>
+				<a href="../index.html" class="btn btn--outline"
+					>به صفحه اصلی برگردید &leftarrow;</a
+				>
+			</section>
+		</main>
+	</body>
+</html>

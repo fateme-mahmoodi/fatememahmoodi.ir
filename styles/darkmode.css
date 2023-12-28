@@ -1,0 +1,50 @@
+/* DARK MODE */
+html[data-theme="dark"] {
+	--primary-color: #b64d42;
+	--white-color: #303030;
+	--gray-color: #e0e0e0;
+	--gray2-color: #d0d0d0;
+	--dark-color: #f0f0f0;
+
+	--shade-one: #f6d9d6;
+	--shade-two: #f0c0bb;
+	--shade-three: #e9a69f;
+
+	--tint-one: #5a332f;
+	--tint-two: #70403b;
+	--tint-three: #9d5a53;
+
+	--boxshadow-color: #ffffff14;
+	--footer-link-color: #aaa;
+}
+
+html[data-theme="dark"] img {
+	filter: brightness(0.8) contrast(1.2);
+}
+
+html[data-theme="dark"] .sticky .header {
+	background-color: rgba(25, 25, 25, 0.85);
+}
+
+html[data-theme="dark"] .delivered-img img {
+	filter: none !important;
+}
+
+html[data-theme="dark"] .footer {
+	border-top-color: #444;
+}
+
+html[data-theme="dark"] .btn--full:hover,
+html[data-theme="dark"] .btn--full:active,
+html[data-theme="dark"] .nav-cta:hover,
+html[data-theme="dark"] .nav-cta:active {
+	background-color: var(--tint-two);
+}
+
+.theme-in-transition,
+.theme-in-transition *,
+.theme-in-transition *:before,
+.theme-in-transition *:after {
+	transition: all 0.3s ease-in-out !important;
+	transition-delay: 0 !important;
+}

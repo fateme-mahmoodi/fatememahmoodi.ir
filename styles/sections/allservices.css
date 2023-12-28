@@ -1,0 +1,87 @@
+/* MEALS SECTION */
+
+.section-allservices {
+	padding: 9.6rem 0;
+	direction: ltr;
+}
+
+.meals {
+	box-shadow: 0 2.4rem 4.8rem var(--boxshadow-color);
+	border-radius: 11px;
+	overflow: hidden;
+	transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.meals:hover {
+	transform: translateY(-1rem);
+	box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.07);
+}
+
+.meals-content {
+	padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+	margin-bottom: 1.2rem;
+	display: flex;
+	gap: 0.5rem;
+}
+
+.tag {
+	display: inline-block;
+	padding: 0.4rem 0.8rem;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #333;
+	border-radius: 100px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.tag--1 {
+	background-color: #51cf66;
+}
+
+.tag--2 {
+	background-color: #94d82d;
+}
+
+.tag--3 {
+	background-color: #ffd43b;
+}
+
+.meal-name {
+	font-size: 2.4rem;
+	color: var(--dark-color);
+	font-weight: 600;
+	margin-bottom: 3.2rem;
+}
+
+.meal-desc {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.meal-list-item {
+	font-size: 1.8rem;
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+}
+
+.meal-img {
+	width: 100%;
+}
+
+.meal-icon {
+	height: 2.4rem;
+	width: 2.4rem;
+	color: var(--primary-color);
+}
+
+.all-recipes {
+	text-align: center;
+	font-size: 1.8rem;
+}
