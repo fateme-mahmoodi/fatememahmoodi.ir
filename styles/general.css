@@ -47,7 +47,7 @@ html {
 
 body {
 	font-family: "Rubik farsi", "Rubik", Tahoma, sans-serif;
-	line-height: 1;
+	line-height: 1.2;
 	font-weight: 400;
 	color: var(--gray-color);
 	overflow-x: hidden;

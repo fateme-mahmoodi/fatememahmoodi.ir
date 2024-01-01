@@ -45,7 +45,7 @@ btnNavEl.addEventListener(`click`, () => {
 const sectionHeroEl = document.querySelector(`.section-hero`);
 
 const obs = new IntersectionObserver(
-	function (entries) {
+	(entries) => {
 		const ent = entries[0];
 		if (!ent.isIntersecting) {
 			document.body.classList.add(`sticky`);
@@ -66,9 +66,7 @@ document.querySelector("body").addEventListener("contextmenu", (e) => {
 	e.preventDefault();
 });
 
-
 window.onload = () => {
 	document.querySelector(".preloader").style.display = "none";
 	document.querySelector("header").style.display = "flex";
-	window.scrollTo({ top: 0, left: 0 });
 };

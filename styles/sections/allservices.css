@@ -1,8 +1,7 @@
-/* MEALS SECTION */
+/* ALLSERVICES SECTION */
 
 .section-allservices {
 	padding: 9.6rem 0;
-	direction: ltr;
 }
 
 .meals {
@@ -12,13 +11,24 @@
 	transition: transform 0.4s, box-shadow 0.4s;
 }
 
+html[data-theme="dark"] .meals {
+	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.09);
+}
+
 .meals:hover {
-	transform: translateY(-1rem);
+	transform: translateY(-1.8rem);
 	box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.07);
+}
+
+html[data-theme="theme"] .meals:hover {
+	box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.05);
 }
 
 .meals-content {
 	padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
 }
 
 .meal-tags {
@@ -28,14 +38,22 @@
 }
 
 .tag {
-	display: inline-block;
-	padding: 0.4rem 0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.6rem 0.8rem;
 	font-size: 1.2rem;
-	text-transform: uppercase;
+	text-decoration: none;
 	color: #333;
 	border-radius: 100px;
 	font-weight: 600;
 	cursor: pointer;
+	filter: none;
+	transition: filter 0.3s;
+}
+
+.tag:hover, .tag:focus, .tag:active {
+	filter: brightness(0.8);
 }
 
 .tag--1 {
@@ -54,34 +72,56 @@
 	font-size: 2.4rem;
 	color: var(--dark-color);
 	font-weight: 600;
-	margin-bottom: 3.2rem;
+	/* margin-bottom: 3.2rem; */
 }
 
 .meal-desc {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
+	/* list-style: none;
 	gap: 2rem;
+	display: flex;
+	flex-direction: column; */
+
+	font-size: 1.8rem;
+	/* line-height: 1.2; */
 }
 
-.meal-list-item {
+/* .meal-list-item {
 	font-size: 1.8rem;
 	display: flex;
 	align-items: center;
 	gap: 1.6rem;
-}
+} */
 
 .meal-img {
 	width: 100%;
+	
 }
 
-.meal-icon {
+/* .meal-icon {
 	height: 2.4rem;
 	width: 2.4rem;
 	color: var(--primary-color);
-}
+} */
 
 .all-recipes {
 	text-align: center;
 	font-size: 1.8rem;
 }
+
+/* <!-- <ul class="meal-desc"> -->
+	<!-- <li class="meal-list-item">
+		<ion-icon name="flame-outline" class="meal-icon"></ion-icon
+		><span> <strong>400</strong> Calories</span>
+	</li>
+	<li class="meal-list-item">
+		<ion-icon
+			name="restaurant-outline"
+			class="meal-icon"
+		></ion-icon
+		><span> NutriScore &reg;: <strong>92</strong></span>
+	</li>
+	<li class="meal-list-item">
+		<ion-icon name="star-outline" class="meal-icon"></ion-icon
+		><span> <strong>4.8</strong> rating (441)</span>
+	</li>
+</ul> --> */

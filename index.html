@@ -65,9 +65,29 @@
 		<script defer src="./scripts/script.js"></script>
 		<script defer src="./scripts/smoothscroll.js"></script>
 		<script defer src="./scripts/darkmode.js"></script>
-		<div class="preloader"><div class="load">
-			<hr/><hr/><hr/><hr/>
-		  </div></div>
+		<noscript>
+			<link rel="stylesheet" href="./styles/done.css">
+			<main>
+				<section class="container">
+					<h1 class="header-primary">اشکال در نمایش وب‌سایت</h1>
+					<h2 class="header-secondary">
+						لطفا از بروز بودن مرورگر خود مطمئن شوید.
+					</h2>
+					<h3 class="subheading">
+						همچنین، اگر قابلیت Javascript مرورگر شما فعال نیست، آنرا فعال نمایید.
+					</h3>
+				</section>
+			</main>
+		</noscript>
+		<div class="preloader">
+			<div class="load">
+				<hr />
+				<hr />
+				<hr />
+				<hr />
+			</div>
+			<p class="preload-title">فاطمه محمودی</p>
+		</div>
 		<header class="header">
 			<div class="header-logo-toggle">
 				<a href="https://fatememahmoodi.ir" class="main-nav-logo"
@@ -176,14 +196,14 @@
 						</div>
 						<div class="step-img-box">
 							<img
-								src="./img/services/super-facial.jpg"
+								src="./img/services/super-facial1.jpg"
 								alt="A woman recieving an super facial service"
 								class="step-img"
 							/>
 						</div>
 						<div class="step-img-box">
 							<img
-								src="./img/services/acid-therapy.jpg"
+								src="./img/services/acid-therapy1.jpg"
 								alt="A person recieving an acid therapy service"
 								class="step-img"
 							/>
@@ -211,7 +231,7 @@
 						</div>
 						<div class="step-img-box">
 							<img
-								src="./img/services/carboxy-therapy.jpg"
+								src="./img/services/carboxy-therapy1.jpg"
 								alt="A woman recieving a carboxy therapy service"
 								class="step-img"
 							/>
@@ -222,114 +242,86 @@
 			<section class="section-allservices" id="allservices">
 				<div class="container center-text">
 					<span class="subheading">خدمات بیشتر</span>
-					<h2 class="header-secondary">بیش‌از ۱۰۰ متد درمان مشکل‌های پوستی</h2>
+					<h2 class="header-secondary">بیش‌از 50 خدمات زیبایی</h2>
 				</div>
 				<div class="container grid grid--3-cols margin-bottom-md">
 					<div class="meals">
 						<img
-							src="./img/meals/meal-1.jpg"
-							alt="Japanese Gyozas"
+							src="./img/services/pollogen-therapy1.jpg"
+							alt="Pollogen Therapy"
 							class="meal-img"
 						/>
 						<div class="meals-content">
 							<div class="meal-tags">
-								<span class="tag tag--1">Vegetarian</span>
+								<a class="tag tag--1" href="./services/skin-services/index.html">پوستی</a>
+								<a class="tag tag--2" href="./services/beauty-services/index.html">زیبایی</a>
 							</div>
-							<p class="meal-name">Japanese Gyozas</p>
-							<ul class="meal-desc">
-								<li class="meal-list-item">
-									<ion-icon name="flame-outline" class="meal-icon"></ion-icon
-									><span> <strong>650</strong> Calories</span>
-								</li>
-								<li class="meal-list-item">
-									<ion-icon
-										name="restaurant-outline"
-										class="meal-icon"
-									></ion-icon
-									><span> NutriScore &reg;: <strong>74</strong></span>
-								</li>
-								<li class="meal-list-item">
-									<ion-icon name="star-outline" class="meal-icon"></ion-icon
-									><span> <strong>4.9</strong> rating (537)</span>
-								</li>
-							</ul>
+							<p class="meal-name">پلاژن تراپی</p>
+							<p class="meal-desc">
+								مناسب برای افرادی که میخواهند پوست جوانی داشته باشند و یا میخواهند مراقبت پوستی انجام دهند.
+							</p>
 						</div>
 					</div>
 					<div class="meals">
 						<img
-							src="./img/meals/meal-2.jpg"
+							src="./img/services/piercing1.jpg"
 							alt="Avocado Salad"
 							class="meal-img"
-						/>
-						<div class="meals-content">
-							<div class="meal-tags">
-								<span class="tag tag--2">Vegan</span>
-								<span class="tag tag--3">Paleo</span>
-							</div>
-							<p class="meal-name">Avocado Salad</p>
-							<ul class="meal-desc">
-								<li class="meal-list-item">
-									<ion-icon name="flame-outline" class="meal-icon"></ion-icon
-									><span> <strong>400</strong> Calories</span>
-								</li>
-								<li class="meal-list-item">
-									<ion-icon
-										name="restaurant-outline"
-										class="meal-icon"
-									></ion-icon
-									><span> NutriScore &reg;: <strong>92</strong></span>
-								</li>
-								<li class="meal-list-item">
-									<ion-icon name="star-outline" class="meal-icon"></ion-icon
-									><span> <strong>4.8</strong> rating (441)</span>
-								</li>
-							</ul>
+							/>
+							<div class="meals-content">
+								<div class="meal-tags">
+									<a class="tag tag--3" href="./services/piercing-services/index.html">پیرسینگ</a>
+								</div>
+								<p class="meal-name">پیرسینگ گوش</p>
+								<p class="meal-desc">
+									انجام خدمات پیرسینگ برای ناحیه گوش (و سایر نواحی بدن) با روش های به‌روز و بدون درد.
+								</p>
 						</div>
 					</div>
 					<div class="diets">
-						<h3 class="header-teritiary">Works with any diet:</h3>
+						<h3 class="header-teritiary">چند نمونه از خدمات ما:</h3>
 						<ul class="list">
 							<li class="list-items">
 								<ion-icon name="checkmark-outline" class="list-icon"></ion-icon
-								><span>Vegetarian</span>
+								><span>بوتاکس</span>
 							</li>
 							<li class="list-items">
 								<ion-icon name="checkmark-outline" class="list-icon"></ion-icon
-								><span>Vegan</span>
+								><span>جوانسازی صورت</span>
 							</li>
 							<li class="list-items">
 								<ion-icon name="checkmark-outline" class="list-icon"></ion-icon
-								><span>Pescatarian</span>
+								><span>ژل و مروژل</span>
 							</li>
 							<li class="list-items">
 								<ion-icon name="checkmark-outline" class="list-icon"></ion-icon
-								><span>Gluten-free</span>
+								><span>درمان ریزش مو</span>
 							</li>
 							<li class="list-items">
 								<ion-icon name="checkmark-outline" class="list-icon"></ion-icon
-								><span>Lactose-free</span>
+								><span>پی‌آرپی (PRP)</span>
 							</li>
 							<li class="list-items">
 								<ion-icon name="checkmark-outline" class="list-icon"></ion-icon
-								><span>Keto</span>
+								><span>رفع مو های زائد</span>
 							</li>
 							<li class="list-items">
 								<ion-icon name="checkmark-outline" class="list-icon"></ion-icon
-								><span>Paleo</span>
+								><span>پیرسینگ</span>
 							</li>
 							<li class="list-items">
 								<ion-icon name="checkmark-outline" class="list-icon"></ion-icon
-								><span>Low FODMAP</span>
+								><span>رفع کک‌ومک و زگیل</span>
 							</li>
 							<li class="list-items">
 								<ion-icon name="checkmark-outline" class="list-icon"></ion-icon
-								><span>Kid-friendly</span>
+								><span>و بسیاری دیگر...</span>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="container all-recipes">
-					<a href="#" class="link">See all recipes &rarr;</a>
+					<a href="./services/index.html" class="link">فهرست تمامی خدمات &leftarrow;</a>
 				</div>
 			</section>
 
@@ -516,11 +508,28 @@
 								class="cta-form"
 								action="https://api.web3forms.com/submit"
 								method="post"
-								>
-								<input type="hidden" name="access_key" value="86e07867-3ea7-45a4-abe2-28b863145d00">
-								<input type="hidden" name="redirect" value="https://fatememahmoodi.ir/services/done.html">
-								<input type="hidden" name="subject" value="ثبت نام جدید از وبسایت">
-								<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+							>
+								<input
+									type="hidden"
+									name="access_key"
+									value="86e07867-3ea7-45a4-abe2-28b863145d00"
+								/>
+								<input
+									type="hidden"
+									name="redirect"
+									value="https://fatememahmoodi.ir/services/done.html"
+								/>
+								<input
+									type="hidden"
+									name="subject"
+									value="ثبت نام جدید از وبسایت"
+								/>
+								<input
+									type="checkbox"
+									name="botcheck"
+									class="hidden"
+									style="display: none"
+								/>
 								<div>
 									<label for="fullname">نام کامل</label>
 									<input
@@ -591,11 +600,11 @@
 						</li>
 					</ul>
 					<p class="copyright">
-						&copy; <span class="year"></span> تمامی حقوق برای دارنده این وب‌سایت
-						محفوظ است
+						&copy; <span class="year"></span> تمامی حقوق برای فاطمه محمودی این
+						وب‌سایت محفوظ است
 					</p>
 					<p class="copyright">
-						طراح وبسایت:
+						طراح وب‌سایت:
 						<a
 							href="https://al1almasi.ir"
 							class="copyright"
@@ -621,16 +630,16 @@
 				<nav class="nav-col">
 					<p class="footer-header">خدمات ما</p>
 					<ul class="footer-nav">
-						<li><a href="#" class="footer-link">خدمات اسکین‌کر</a></li>
-						<li><a href="#" class="footer-link">خدمات تزریق</a></li>
-						<li><a href="#" class="footer-link">پرتو درمانی</a></li>
-						<li><a href="#" class="footer-link">پزشکی هسته‌ای</a></li>
+						<li><a href="#" class="footer-link">خدمات پوستی</a></li>
+						<li><a href="#" class="footer-link">خدمات زیبایی</a></li>
+						<li><a href="#" class="footer-link">خدمات مو و لیزر</a></li>
+						<li><a href="#" class="footer-link">خدمات پیرسینگ</a></li>
 					</ul>
 				</nav>
 				<nav class="nav-col">
 					<p class="footer-header">درباره ما</p>
 					<ul class="footer-nav">
-						<li><a href="#" class="footer-link">خدمات ما</a></li>
+						<li><a href="#" class="footer-link">فهرست خدمات</a></li>
 						<li><a href="#" class="footer-link">آکادمی آموزش</a></li>
 						<li><a href="#" class="footer-link">سوابق ما</a></li>
 					</ul>

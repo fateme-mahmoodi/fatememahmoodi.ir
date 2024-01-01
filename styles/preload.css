@@ -1,5 +1,5 @@
 .preloader {
-	background-color: var(--white-color);
+	background-color: var(--tint-one);
 	width: 100svw;
 	height: 100svh;
 	position: fixed;
@@ -7,6 +7,7 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 99999;
+	gap: 15rem;
 }
 
 .load {
@@ -19,7 +20,7 @@
 	align-items: center;
 }
 
-.load hr {
+.load > hr {
 	border: 0;
 	margin: 0;
 	width: 40%;
@@ -30,11 +31,11 @@
 }
 
 .load :first-child {
-	background: var(--primary-color);
+	background: var(--tint-two);
 	animation-delay: -1.5s;
 }
 .load :nth-child(2) {
-	background: var(--tint-one);
+	background: var(--primary-color);
 	animation-delay: -1s;
 }
 .load :nth-child(3) {
@@ -42,7 +43,7 @@
 	animation-delay: -0.5s;
 }
 .load :last-child {
-	background: var(--dark-color);
+	background: var(--shade-two);
 }
 
 @keyframes spin {
@@ -59,4 +60,11 @@
 	75% {
 		transform: translate(0, 160%);
 	}
+}
+
+.preload-title {
+	font-size: 4rem;
+	font-weight: 900;
+	margin-top: 15rem;
+	color: var(--shade-one);
 }

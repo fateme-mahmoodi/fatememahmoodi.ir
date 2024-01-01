@@ -26,7 +26,7 @@ function updateThemeOnHtmlEl({ theme }) {
 	document.documentElement.setAttribute("data-theme", theme);
 	window.setTimeout(function () {
 		document.documentElement.classList.remove("theme-in-transition");
-	}, 1000);
+	}, 300);
 }
 
 const themeSwitch = document.querySelector("[data-theme-toggle]");
