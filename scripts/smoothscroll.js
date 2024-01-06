@@ -1,3 +1,8 @@
+const smoothScroll = (element) =>
+	element.scrollIntoView({ behavior: "smooth" });
+
+const scrollToTop = () => window.scrollTo({ top: 0, behavior: `smooth` });
+
 const allLinks = document.querySelectorAll(`a:link`);
 allLinks.forEach(function (link) {
 	link.addEventListener(`click`, (e) => {
@@ -5,15 +10,12 @@ allLinks.forEach(function (link) {
 		const href = link.getAttribute(`href`);
 
 		if (href === `#`) {
-			window.scrollTo({
-				top: 0,
-				behavior: `smooth`,
-			});
+			scrollToTop();
 		}
 
 		if (href !== `#` && href.startsWith(`#`)) {
 			const sectionEl = document.querySelector(href);
-			sectionEl.scrollIntoView({ behavior: `smooth` });
+			smoothScroll(sectionEl);
 		}
 		if (link.classList.contains(`main-nav-link`)) {
 			headerEl.classList.remove(`nav-open`);
@@ -23,3 +25,18 @@ allLinks.forEach(function (link) {
 		}
 	});
 });
+
+const backToTopBtn = document.querySelector(".backToTop");
+
+window.addEventListener("scroll", () => {
+	if (
+		document.body.scrollTop > 160 ||
+		document.documentElement.scrollTop > 160
+	) {
+		backToTopBtn.style.opacity = 1;
+	} else {
+		backToTopBtn.style.opacity = 0;
+	}
+});
+
+backToTopBtn.addEventListener("click", scrollToTop);
