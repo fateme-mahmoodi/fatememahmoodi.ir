@@ -7,7 +7,7 @@
 	user-select: text;
 }
 
-*::selection {
+[data-theme="light"] *::selection {
 	background-color: rgba(233, 166, 159, 0.85);
 	color: #fff;
 }

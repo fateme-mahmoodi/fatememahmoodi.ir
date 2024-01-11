@@ -1,6 +1,7 @@
 @import url("./sections/header.css");
 @import url("./sections/hero.css");
-@import url("./sections/allservices.css");
+@import url("./sections/list.css");
+@import url("./sections/service.css");
 @import url("./sections/positive-points.css");
 @import url("./sections/cta.css");
 @import url("./sections/footer.css");

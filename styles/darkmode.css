@@ -1,4 +1,9 @@
 /* DARK MODE */
+[data-theme="dark"] *::selection {
+	background-color: rgba(157, 90, 83, 0.85);
+	color: #fff;
+}
+
 html[data-theme="dark"] {
 	--primary-color: #b64d42;
 	--white-color: #303030;
