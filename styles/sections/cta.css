@@ -44,7 +44,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	-moz-column-gap: 3.2rem;
-	     column-gap: 3.2rem;
+	column-gap: 3.2rem;
 	row-gap: 2.4rem;
 }
 
@@ -112,16 +112,17 @@
 	gap: 1rem;
 	text-decoration: none;
 	-webkit-filter: none;
-	        filter: none;
+	filter: none;
 	transition: -webkit-filter 0.3s;
 	transition: filter 0.3s;
 	transition: filter 0.3s, -webkit-filter 0.3s;
+	color: unset;
 }
 
 .social:hover,
 .social:focus {
 	-webkit-filter: brightness(0.8);
-	        filter: brightness(0.8);
+	filter: brightness(0.8);
 }
 
 .social .icon-socials {

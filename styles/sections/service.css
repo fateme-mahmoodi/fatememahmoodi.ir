@@ -11,6 +11,11 @@
 	color: unset;
 }
 
+.step-textbox .link {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
 .step-img-box {
 	display: flex;
 	align-items: center;
@@ -58,4 +63,5 @@
 .step-desc {
 	font-size: 1.8rem;
 	line-height: 1.8;
+	margin-bottom: 0.6rem;
 }

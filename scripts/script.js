@@ -34,15 +34,17 @@ const yearEl = document.querySelector(`.year`);
 const currentYear = new PersianDate().getYear();
 yearEl.textContent = currentYear;
 
+const sectionHeroEl =
+	document.querySelector(`.section-hero`) ||
+	document.querySelector(`.section-hero__secondary`);
+
 const headerEl = document.querySelector(`.header`);
 const btnNavEl = document.querySelector(`.btn-mobile-nav`);
 
 btnNavEl.addEventListener(`click`, () => {
 	headerEl.classList.toggle(`nav-open`);
-	document.querySelector(`.section-hero`).classList.toggle("nav-open");
+	sectionHeroEl.classList.toggle("nav-open");
 });
-
-const sectionHeroEl = document.querySelector(`.section-hero`);
 
 const obs = new IntersectionObserver(
 	(entries) => {
