@@ -27,23 +27,43 @@
 	height: 40%;
 	position: absolute;
 	border-radius: 50%;
+	-webkit-animation: spin 2s ease infinite;
 	animation: spin 2s ease infinite;
 }
 
 .load :first-child {
 	background: var(--tint-two);
+	-webkit-animation-delay: -1.5s;
 	animation-delay: -1.5s;
 }
 .load :nth-child(2) {
 	background: var(--primary-color);
+	-webkit-animation-delay: -1s;
 	animation-delay: -1s;
 }
 .load :nth-child(3) {
 	background: var(--shade-one);
+	-webkit-animation-delay: -0.5s;
 	animation-delay: -0.5s;
 }
 .load :last-child {
 	background: var(--shade-two);
+}
+
+@-webkit-keyframes spin {
+	0%,
+	100% {
+		transform: translate(0);
+	}
+	25% {
+		transform: translate(160%);
+	}
+	50% {
+		transform: translate(160%, 160%);
+	}
+	75% {
+		transform: translate(0, 160%);
+	}
 }
 
 @keyframes spin {

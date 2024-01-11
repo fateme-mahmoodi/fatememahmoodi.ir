@@ -1,4 +1,8 @@
 /* DARK MODE */
+[data-theme="dark"] *::-moz-selection {
+	background-color: rgba(157, 90, 83, 0.85);
+	color: #fff;
+}
 [data-theme="dark"] *::selection {
 	background-color: rgba(157, 90, 83, 0.85);
 	color: #fff;
@@ -24,6 +28,7 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="dark"] img {
+	-webkit-filter: brightness(0.8) contrast(1.2);
 	filter: brightness(0.8) contrast(1.2);
 }
 
@@ -32,6 +37,7 @@ html[data-theme="dark"] .sticky .header {
 }
 
 html[data-theme="dark"] .delivered-img img {
+	-webkit-filter: none !important;
 	filter: none !important;
 }
 

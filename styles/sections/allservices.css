@@ -48,11 +48,17 @@ html[data-theme="theme"] .meals:hover {
 	border-radius: 100px;
 	font-weight: 600;
 	cursor: pointer;
+	-webkit-filter: none;
 	filter: none;
+	transition: -webkit-filter 0.3s;
 	transition: filter 0.3s;
+	transition: filter 0.3s, -webkit-filter 0.3s;
 }
 
-.tag:hover, .tag:focus, .tag:active {
+.tag:hover,
+.tag:focus,
+.tag:active {
+	-webkit-filter: brightness(0.8);
 	filter: brightness(0.8);
 }
 
@@ -94,7 +100,6 @@ html[data-theme="theme"] .meals:hover {
 
 .meal-img {
 	width: 100%;
-	
 }
 
 /* .meal-icon {

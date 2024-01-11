@@ -21,6 +21,7 @@
 	}
 
 	.grid {
+		-moz-column-gap: 4.8rem;
 		column-gap: 4.8rem;
 		row-gap: 6.4rem;
 	}

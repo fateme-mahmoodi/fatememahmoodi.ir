@@ -4,7 +4,15 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
 	user-select: text;
+}
+
+[data-theme="light"] *::-moz-selection {
+	background-color: rgba(233, 166, 159, 0.85);
+	color: #fff;
 }
 
 [data-theme="light"] *::selection {
@@ -63,6 +71,7 @@ body {
 .grid {
 	display: grid;
 	row-gap: 9.6rem;
+	-moz-column-gap: 6.4rem;
 	column-gap: 6.4rem;
 }
 
