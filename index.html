@@ -19,11 +19,11 @@
 		<meta name="author" content="Fateme Mahmoodi" />
 
 		<title>Fateme Mahmoodi &ndash; Beauty Therapist</title>
-		<link rel="stylesheet" href="./styles/general.css" />
-		<link rel="stylesheet" href="./styles/preload.css" />
-		<link rel="stylesheet" href="./styles/index.css" />
-		<link rel="stylesheet" href="./styles/queries.css" />
-		<link rel="stylesheet" href="./styles/darkmode.css" />
+		<link rel="stylesheet" href="/styles/general.css" />
+		<link rel="stylesheet" href="/styles/preload.css" />
+		<link rel="stylesheet" href="/styles/index.css" />
+		<link rel="stylesheet" href="/styles/queries.css" />
+		<link rel="stylesheet" href="/styles/darkmode.css" />
 
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -58,27 +58,24 @@
 			nomodule
 			src="https://unpkg.com/ionicons/dist/ionicons/ionicons.js"
 		></script>
-		<script defer src="./scripts/script.js"></script>
-		<script defer src="./scripts/smoothscroll.js"></script>
-		<script defer src="./scripts/darkmode.js"></script>
+		<script defer src="/scripts/script.js"></script>
+		<script defer src="/scripts/smoothscroll.js"></script>
+		<script defer src="/scripts/darkmode.js"></script>
 		<noscript>
-			<link rel="stylesheet" href="./styles/done.css" />
+			<link rel="stylesheet" href="/styles/done.css" />
 			<section
-				class="container flex-centered--v center-text"
-				style="
-					width: 100svw;
-					height: 100svh;
-					z-index: 99999;
-					margin-bottom: 100rem;
-				"
+				class="container flex-centered--v center-text noscript-container"
 			>
 				<h1 class="header-primary">اشکال در نمایش وب‌سایت!</h1>
 				<h2 class="header-secondary margin-bottom-md">
 					لطفا از بروز بودن مرورگر خود مطمئن شوید.
 				</h2>
-				<h3 class="subheading">
+				<h3 class="subheading margin-bottom-md">
 					همچنین، اگر قابلیت Javascript مرورگر شما فعال نیست، آنرا فعال نمایید.
 				</h3>
+				<a href="/" class="btn btn--outline"
+					>به صفحه اصلی برگردید &leftarrow;</a
+				>
 			</section>
 		</noscript>
 		<div class="preloader">
@@ -110,8 +107,10 @@
 						<a href="#service" class="main-nav-link">خدمات زیبایی</a>
 					</li>
 					<li><a href="#allservices" class="main-nav-link">لیست خدمات</a></li>
-					<li><a href="#testimonials" class="main-nav-link">نظر مشتریان</a></li>
-					<li><a href="#cta" class="main-nav-link nav-cta">امتحان کن</a></li>
+					<li>
+						<a href="#testimonials" class="main-nav-link">نظرات مشتریان</a>
+					</li>
+					<li><a href="#cta" class="main-nav-link nav-cta">امتحان کنید</a></li>
 				</ul>
 			</nav>
 			<button class="btn-mobile-nav">
@@ -144,30 +143,12 @@
 						>
 						<div class="delivered-meals">
 							<div class="delivered-img">
-								<img
-									src="./img/customers/customer-1.jpg"
-									alt="Customer Photo"
-								/>
-								<img
-									src="./img/customers/customer-2.jpg"
-									alt="Customer Photo"
-								/>
-								<img
-									src="./img/customers/customer-3.jpg"
-									alt="Customer Photo"
-								/>
-								<img
-									src="./img/customers/customer-4.jpg"
-									alt="Customer Photo"
-								/>
-								<img
-									src="./img/customers/customer-5.jpg"
-									alt="Customer Photo"
-								/>
-								<img
-									src="./img/customers/customer-6.jpg"
-									alt="Customer Photo"
-								/>
+								<img src="/img/customers/customer1.jpg" alt="Customer Photo" />
+								<img src="/img/customers/customer2.jpg" alt="Customer Photo" />
+								<img src="/img/customers/customer3.jpg" alt="Customer Photo" />
+								<img src="/img/customers/customer4.jpg" alt="Customer Photo" />
+								<img src="/img/customers/customer5.jpg" alt="Customer Photo" />
+								<img src="/img/customers/customer6.jpg" alt="Customer Photo" />
 							</div>
 							<p class="delivered-text">
 								بیش از <span>5,000</span> مراجعه‌کننده در سال گذشته
@@ -176,7 +157,7 @@
 					</div>
 					<div class="hero-img-box">
 						<img
-							src="./img/hero.png"
+							src="/img/hero.png"
 							class="hero-img"
 							alt="A woman using a cosmetic product"
 						/>
@@ -201,14 +182,14 @@
 						</div>
 						<div class="step-img-box">
 							<img
-								src="./img/services/super-facial1.jpg"
+								src="/img/services/super-facial1.jpg"
 								alt="A woman recieving an super facial service"
 								class="step-img"
 							/>
 						</div>
 						<div class="step-img-box">
 							<img
-								src="./img/services/acid-therapy1.jpg"
+								src="/img/services/acid-therapy1.jpg"
 								alt="A person recieving an acid therapy service"
 								class="step-img"
 							/>
@@ -236,7 +217,7 @@
 						</div>
 						<div class="step-img-box">
 							<img
-								src="./img/services/carboxy-therapy1.jpg"
+								src="/img/services/carboxy-therapy1.jpg"
 								alt="A woman recieving a carboxy therapy service"
 								class="step-img"
 							/>
@@ -252,18 +233,14 @@
 				<div class="container grid grid--3-cols margin-bottom-md">
 					<div class="meals">
 						<img
-							src="./img/services/pollogen-therapy1.jpg"
+							src="/img/services/pollogen-therapy1.jpg"
 							alt="Pollogen Therapy"
 							class="meal-img"
 						/>
 						<div class="meals-content">
 							<div class="meal-tags">
-								<a class="tag tag--1" href="./services/skin-services/index.html"
-									>پوستی</a
-								>
-								<a
-									class="tag tag--2"
-									href="./services/beauty-services/index.html"
+								<a class="tag tag--1" href="/services/skin-services/">پوستی</a>
+								<a class="tag tag--2" href="/services/beauty-services/"
 									>زیبایی</a
 								>
 							</div>
@@ -276,15 +253,13 @@
 					</div>
 					<div class="meals">
 						<img
-							src="./img/services/piercing1.jpg"
+							src="/img/services/piercing1.jpg"
 							alt="Avocado Salad"
 							class="meal-img"
 						/>
 						<div class="meals-content">
 							<div class="meal-tags">
-								<a
-									class="tag tag--3"
-									href="./services/piercing-services/index.html"
+								<a class="tag tag--3" href="/services/piercing-services/"
 									>پیرسینگ</a
 								>
 							</div>
@@ -338,140 +313,140 @@
 					</div>
 				</div>
 				<div class="container all-recipes">
-					<a href="./services/index.html" class="link"
-						>فهرست تمامی خدمات &leftarrow;</a
-					>
+					<a href="/services/" class="link">فهرست تمامی خدمات &leftarrow;</a>
 				</div>
 			</section>
 
 			<section class="section-testimonials" id="testimonials">
 				<div class="testimonials-container">
-					<span class="subheading">نظر مشتریان</span>
-					<h2 class="header-secondary">
-						امتحانش کنی، دیگه نمی‌تونی نادیده‌ش بگیری
-					</h2>
+					<span class="subheading"> رضایت و اعتماد شما، اعتبار ماست </span>
+					<h2 class="header-secondary">نظرات مشتریان</h2>
 					<div class="testimonials">
 						<figure class="testimonial">
 							<img
-								src="./img/customers/dave.jpg"
-								alt="Dave Bryson profile picture"
+								src="/img/customers/customer7.jpg"
+								alt="Customer profile picture"
 								class="testimonial-img"
 							/>
 							<blockquote class="testimonial-text">
-								Inexpensive, healthy and great-tasting meals, without even
-								having to order manually! It feels truly magical.
+								از خدمات بی نظیر بسیار سپاسگزارم. از مراجعه به کلینیک زیبایی نام
+								کلینیک بسیار راضی بودم. پرسنل بسیار ماهر و مهربان بودند و من از
+								نتایج درمانم بسیار خوشحالم.
 							</blockquote>
-							<span class="testimonial-name">&mdash; Dave Bryson</span>
+							<span class="testimonial-name">&mdash; نگار م.</span>
 						</figure>
 						<figure class="testimonial">
 							<img
-								src="./img/customers/ben.jpg"
-								alt="Ben Hadley profile picture"
+								src="/img/customers/customer8.jpg"
+								alt="Customer profile picture"
 								class="testimonial-img"
 							/>
 							<blockquote class="testimonial-text">
-								The AI algorithm is crazy good, it chooses the right meals for
-								me every time. It's amazing not to worry about food anymore!
+								از اولین جلسه درمانی، متوجه پیشرفت چشمگیری در پوستم شدم. خانم
+								محمودی با دقت شرایط پوستم را بررسی کردند و درمان های مناسب را
+								برای من تجویز کردند.
 							</blockquote>
-							<span class="testimonial-name">&mdash; Ben Hadley</span>
+							<span class="testimonial-name">&mdash; متین ج.</span>
 						</figure>
 						<figure class="testimonial">
 							<img
-								src="./img/customers/steve.jpg"
-								alt="Steve Miller profile picture"
+								src="/img/customers/customer9.jpg"
+								alt="Customer profile picture"
 								class="testimonial-img"
 							/>
 							<blockquote class="testimonial-text">
-								Omnifood is a life saver! I just started a company, so there's
-								no time for cooking. I couldn't live without my daily meals now!
+								پرسنل با صبر و حوصله به تمام سوالات و نگرانی های من پاسخ دادند و
+								من را در طول درمان همراهی کردند. نتایج درمانی فوق العاده بود و
+								پوستم اکنون بسیار نرم و لطیف است.
 							</blockquote>
-							<span class="testimonial-name">&mdash; Steve Miller</span>
+							<span class="testimonial-name">&mdash; مری ط.</span>
 						</figure>
 						<figure class="testimonial">
 							<img
-								src="./img/customers/hannah.jpg"
-								alt="Hannah Smith profile picture"
+								src="/img/customers/customer10.jpg"
+								alt="Customer profile picture"
 								class="testimonial-img"
 							/>
 							<blockquote class="testimonial-text">
-								I got Omnifood for the whole family, and it frees up so much
-								time! Plus, everything is organic and vegan and without plastic.
+								سال ها از آکنه رنج می بردم و هیچ درمان خانگی یا شیمیایی نتوانست
+								آن را از بین ببرد. وقتی مراجعه کردم، با رویکرد درمانی متفاوت و
+								تخصصی خانم محمودی مواجه شدم.
 							</blockquote>
-							<span class="testimonial-name">&mdash; Hannah Smith</span>
+							<span class="testimonial-name">&mdash; حبیب غ.</span>
 						</figure>
 					</div>
 				</div>
 				<div class="gallery-container">
 					<figure class="gallery-item">
 						<img
-							src="./img/gallery/gallery-1.jpg"
-							alt="Photo of beautifully arranged food"
+							src="/img/gallery/gallery1.jpg"
+							alt="Photo of customers receiving beauty services"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
-							src="./img/gallery/gallery-2.jpg"
-							alt="Photo of beautifully arranged food"
+							src="/img/gallery/gallery2.jpg"
+							alt="Photo of customers receiving beauty services"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
-							src="./img/gallery/gallery-3.jpg"
-							alt="Photo of beautifully arranged food"
+							src="/img/gallery/gallery3.jpg"
+							alt="Photo of customers receiving beauty services"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
-							src="./img/gallery/gallery-4.jpg"
-							alt="Photo of beautifully arranged food"
+							src="/img/gallery/gallery4.jpg"
+							alt="Photo of customers receiving beauty services"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
-							src="./img/gallery/gallery-5.jpg"
-							alt="Photo of a chef cocking delicious food"
+							src="/img/gallery/gallery5.jpg"
+							alt="Photo of customers receiving beauty services"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
-							src="./img/gallery/gallery-6.jpg"
-							alt="Photo of beautifully arranged food"
+							src="/img/gallery/gallery6.jpg"
+							alt="Photo of customers receiving beauty services"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
-							src="./img/gallery/gallery-7.jpg"
-							alt="Photo of beautifully arranged food"
+							src="/img/gallery/gallery7.jpg"
+							alt="Photo of customers receiving beauty services"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
-							src="./img/gallery/gallery-8.jpg"
-							alt="Photo of beautifully arranged food"
+							src="/img/gallery/gallery8.jpg"
+							alt="Photo of customers receiving beauty services"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
-							src="./img/gallery/gallery-9.jpg"
-							alt="Photo of beautifully arranged food"
+							src="/img/gallery/gallery9.jpg"
+							alt="Photo of customers receiving beauty services"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
-							src="./img/gallery/gallery-10.jpg"
-							alt="Photo of beautifully arranged food"
+							src="/img/gallery/gallery10.jpg"
+							alt="Photo of customers receiving beauty services"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
-							src="./img/gallery/gallery-11.jpg"
-							alt="Photo of beautifully arranged food"
+							src="/img/gallery/gallery11.jpg"
+							alt="Photo of customers receiving beauty services"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
-							src="./img/gallery/gallery-12.jpg"
-							alt="Photo of beautifully arranged food"
+							src="/img/gallery/gallery12.jpg"
+							alt="Photo of customers receiving beauty services"
 						/>
 					</figure>
 				</div>
@@ -680,24 +655,22 @@
 					<p class="footer-header">خدمات ما</p>
 					<ul class="footer-nav">
 						<li>
-							<a href="/services/skin-services/index.html" class="footer-link"
+							<a href="/services/skin-services/" class="footer-link"
 								>خدمات پوستی</a
 							>
 						</li>
 						<li>
-							<a href="/services/beauty-services/index.html" class="footer-link"
+							<a href="/services/beauty-services/" class="footer-link"
 								>خدمات زیبایی</a
 							>
 						</li>
 						<li>
-							<a href="/services/hair-services/index.html" class="footer-link"
+							<a href="/services/hair-services/" class="footer-link"
 								>خدمات مو و لیزر</a
 							>
 						</li>
 						<li>
-							<a
-								href="/services/piercing-services/index.html"
-								class="footer-link"
+							<a href="/services/piercing-services/" class="footer-link"
 								>خدمات پیرسینگ</a
 							>
 						</li>
@@ -707,12 +680,10 @@
 					<p class="footer-header">درباره ما</p>
 					<ul class="footer-nav">
 						<li>
-							<a href="/services/index.html" class="footer-link">فهرست خدمات</a>
+							<a href="/services/" class="footer-link">فهرست خدمات</a>
 						</li>
 						<li>
-							<a href="/services/academy/index.html" class="footer-link"
-								>آکادمی آموزش</a
-							>
+							<a href="/services/academy/" class="footer-link">آکادمی آموزش</a>
 						</li>
 						<li><a href="#" class="footer-link">سوابق ما</a></li>
 					</ul>

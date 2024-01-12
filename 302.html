@@ -52,7 +52,7 @@
 		<script>
 			function calculateSettingAsThemeString({
 				localStorageTheme,
-				systemSettingDark,
+				systemSettingDark
 			}) {
 				if (localStorageTheme !== null) {
 					return localStorageTheme;
@@ -82,7 +82,7 @@
 
 			let currentThemeSetting = calculateSettingAsThemeString({
 				localStorageTheme,
-				systemSettingDark,
+				systemSettingDark
 			});
 
 			updateThemeOnHtmlEl({ theme: currentThemeSetting });
@@ -90,21 +90,18 @@
 		<noscript>
 			<link rel="stylesheet" href="/styles/done.css" />
 			<section
-				class="container flex-centered--v center-text"
-				style="
-					width: 100svw;
-					height: 100svh;
-					z-index: 99999;
-					margin-bottom: 100rem;
-				"
+				class="container flex-centered--v center-text noscript-container"
 			>
 				<h1 class="header-primary">اشکال در نمایش وب‌سایت!</h1>
 				<h2 class="header-secondary margin-bottom-md">
 					لطفا از بروز بودن مرورگر خود مطمئن شوید.
 				</h2>
-				<h3 class="subheading">
+				<h3 class="subheading margin-bottom-md">
 					همچنین، اگر قابلیت Javascript مرورگر شما فعال نیست، آنرا فعال نمایید.
 				</h3>
+				<a href="/" class="btn btn--outline"
+					>به صفحه اصلی برگردید &leftarrow;</a
+				>
 			</section>
 		</noscript>
 		<main>

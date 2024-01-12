@@ -19,10 +19,10 @@
 		<meta name="author" content="Fateme Mahmoodi" />
 
 		<title>Fateme Mahmoodi &ndash; Beauty Therapist</title>
-		<link rel="stylesheet" href="../../styles/general.css" />
-		<link rel="stylesheet" href="../../styles/queries.css" />
-		<link rel="stylesheet" href="../../styles/darkmode.css" />
-		<link rel="stylesheet" href="../../styles/done.css" />
+		<link rel="stylesheet" href="/styles/general.css" />
+		<link rel="stylesheet" href="/styles/queries.css" />
+		<link rel="stylesheet" href="/styles/darkmode.css" />
+		<link rel="stylesheet" href="/styles/done.css" />
 
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -52,7 +52,7 @@
 		<script>
 			function calculateSettingAsThemeString({
 				localStorageTheme,
-				systemSettingDark,
+				systemSettingDark
 			}) {
 				if (localStorageTheme !== null) {
 					return localStorageTheme;
@@ -82,37 +82,38 @@
 
 			let currentThemeSetting = calculateSettingAsThemeString({
 				localStorageTheme,
-				systemSettingDark,
+				systemSettingDark
 			});
 
 			updateThemeOnHtmlEl({ theme: currentThemeSetting });
 		</script>
 		<noscript>
-			<link rel="stylesheet" href="../styles/done.css" />
+			<link rel="stylesheet" href="/styles/done.css" />
 			<section
-				class="container flex-centered--v center-text"
-				style="
-					width: 100svw;
-					height: 100svh;
-					z-index: 99999;
-					margin-bottom: 100rem;
-				"
+				class="container flex-centered--v center-text noscript-container"
 			>
 				<h1 class="header-primary">اشکال در نمایش وب‌سایت!</h1>
 				<h2 class="header-secondary margin-bottom-md">
 					لطفا از بروز بودن مرورگر خود مطمئن شوید.
 				</h2>
-				<h3 class="subheading">
+				<h3 class="subheading margin-bottom-md">
 					همچنین، اگر قابلیت Javascript مرورگر شما فعال نیست، آنرا فعال نمایید.
 				</h3>
+				<a href="/" class="btn btn--outline"
+					>به صفحه اصلی برگردید &leftarrow;</a
+				>
 			</section>
 		</noscript>
 		<main>
 			<section class="container">
-				<h1 class="header-primary">شما 404 شدید!</h1>
+				<h1 class="header-primary">خطای 110010100!</h1>
 				<h2 class="header-secondary margin-bottom-md">
-					صفحه‌ای که شما بدنبال آن هستید، وجود ندارد.
+					صفحه‌ای که بدنبال آن هستید، وجود ندارد.
 				</h2>
+				<p class="subheading margin-bottom-md">
+					ممکن است صفحه‌ای که دنبال آن هستید، حذف یا به یک آدرس دیگری منتقل شده
+					است.
+				</p>
 				<a href="/" class="btn btn--outline"
 					>به صفحه اصلی برگردید &leftarrow;</a
 				>
