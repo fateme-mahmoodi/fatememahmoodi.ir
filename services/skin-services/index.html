@@ -19,11 +19,11 @@
 		<meta name="author" content="Fateme Mahmoodi" />
 
 		<title>Fateme Mahmoodi &ndash; Beauty Therapist</title>
-		<link rel="stylesheet" href="../../styles/general.css" />
-		<link rel="stylesheet" href="../../styles/preload.css" />
-		<link rel="stylesheet" href="../../styles/secondary.css" />
-		<link rel="stylesheet" href="../../styles/queries.css" />
-		<link rel="stylesheet" href="../../styles/darkmode.css" />
+		<link rel="stylesheet" href="/styles/general.css" />
+		<link rel="stylesheet" href="/styles/preload.css" />
+		<link rel="stylesheet" href="/styles/secondary.css" />
+		<link rel="stylesheet" href="/styles/queries.css" />
+		<link rel="stylesheet" href="/styles/darkmode.css" />
 
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -58,9 +58,9 @@
 			nomodule
 			src="https://unpkg.com/ionicons/dist/ionicons/ionicons.js"
 		></script>
-		<script defer src="../../scripts/script.js"></script>
-		<script defer src="../../scripts/smoothscroll.js"></script>
-		<script defer src="../../scripts/darkmode.js"></script>
+		<script defer src="/scripts/script.js"></script>
+		<script defer src="/scripts/smoothscroll.js"></script>
+		<script defer src="/scripts/darkmode.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="/styles/done.css" />
 			<section
@@ -70,9 +70,9 @@
 				<h2 class="header-secondary margin-bottom-md">
 					لطفا از بروز بودن مرورگر خود مطمئن شوید.
 				</h2>
-				<h3 class="subheading margin-bottom-md">
+				<p class="subheading margin-bottom-md">
 					همچنین، اگر قابلیت Javascript مرورگر شما فعال نیست، آنرا فعال نمایید.
-				</h3>
+				</p>
 				<a href="/" class="btn btn--outline"
 					>به صفحه اصلی برگردید &leftarrow;</a
 				>
@@ -121,22 +121,203 @@
 			</button>
 		</header>
 		<main>
-			<section class="section-hero__secondary">
+			<section class="section-hero__secondary" id="hero">
 				<div class="hero__secondary">
-					<div class="hero-textbox__secondary">
-						<h1 class="header-primary">
-							خدمات پوستی ما، سلامت پوست شما را تضمین می‌کند.
-						</h1>
-						<p class="hero-desc">
-							خدمات پوستی ما شامل سوپر فیشیال، اسید تراپی، کربوکسی‌تراپی،
-							پلاژن‌تراپی، ماساژ صورت، تونل ال‌ای‌دی و بسیاری دیگر می‌باشد.
-						</p>
-						<div class="hero-buttons">
-							<a href="#cta" class="btn btn--full margin-left-sm">زیبا شوید</a>
-							<a href="#service" class="btn btn--outline"
-								>بیشتر بدانید &downarrow;</a
-							>
+					<h1 class="header-primary">
+						خدمات پوستی ما، سلامت پوست شما را تضمین می‌کند.
+					</h1>
+					<p class="hero-desc">
+						خدمات پوستی ما شامل سوپر فیشیال، اسید تراپی، کربوکسی‌تراپی،
+						پلاژن‌تراپی، ماساژ صورت، تونل ال‌ای‌دی و بسیاری دیگر می‌باشد.
+					</p>
+					<div class="hero-buttons">
+						<a href="#cta" class="btn btn--full margin-left-sm">زیبا شوید</a>
+						<a href="#list" class="btn btn--outline"
+							>بیشتر بدانید &downarrow;</a
+						>
+					</div>
+				</div>
+			</section>
+			<section class="section-list" id="list">
+				<div class="container">
+					<p class="subheading">در خدمت شماییم</p>
+					<h2 class="header-secondary">فهرست خدمات پوستی</h2>
+					<div class="grid grid--2-cols grid--center-v">
+						<div>
+							<li>
+								<h3 class="header-teritiary">
+									<a href="./super-facial.html" class="link"
+										><ion-icon name="checkmark-circle"></ion-icon> سوپر فیشیال
+										<ion-icon name="caret-back-outline"></ion-icon
+									></a>
+								</h3>
+								<p class="list-desc">
+									این روش زیبایی و درمانی جدید و فوق العاده علاوه بر مزایای
+									درمانی بیشماری که دارد، منجربه افزایش زیبایی هم میشود.
+								</p>
+							</li>
 						</div>
+						<div>
+							<li>
+								<img
+									src="/img/services/super-facial2.jpg"
+									alt="A customer receiving some skincare services"
+									class="list-img"
+								/>
+								<img
+									src="/img/services/super-facial3.jpg"
+									alt="A customer receiving some skincare services"
+									class="list-img"
+								/>
+							</li>
+						</div>
+						<div>
+							<li>
+								<h3 class="header-teritiary">
+									<a href="./acid-therapy.html" class="link"
+										><ion-icon name="checkmark-circle"></ion-icon>اسید
+										تراپی<ion-icon name="caret-back-outline"></ion-icon
+									></a>
+								</h3>
+								<p class="list-desc">
+									این روش برای درمان مشکلات مختلف پوستی از جمله جوش‌ها، چین و
+									چروک‌ها، لکه‌های پوستی، و غیره مورد استفاده قرار می‌گیرد.
+								</p>
+							</li>
+						</div>
+						<div>
+							<li>
+								<img
+									src="/img/services/acid-therapy2.jpg"
+									alt="A customer receiving some skincare services"
+									class="list-img"
+								/>
+								<img
+									src="/img/services/acid-therapy3.jpg"
+									alt="A customer receiving some skincare services"
+									class="list-img"
+								/>
+							</li>
+						</div>
+						<div>
+							<li>
+								<h3 class="header-teritiary">
+									<a href="./carboxy-therapy.html" class="link"
+										><ion-icon name="checkmark-circle"></ion-icon
+										>کربوکسی‌تراپی<ion-icon name="caret-back-outline"></ion-icon
+									></a>
+								</h3>
+								<p class="list-desc">
+									کربوکسی تراپی یک روش جوانسازی، ترمیم و بهبود پوست است و شامل
+									تزریق مقادیر کمی دی‌اکسید کربن زیر پوست می‌شود.
+								</p>
+							</li>
+						</div>
+						<div>
+							<li>
+								<img
+									src="/img/services/carboxy-therapy1.jpg"
+									alt="A customer receiving some skincare services"
+									class="list-img"
+								/>
+								<img
+									src="/img/services/gel2.jpg"
+									alt="A customer receiving some skincare services"
+									class="list-img"
+								/>
+							</li>
+						</div>
+						<div>
+							<li>
+								<h3 class="header-teritiary">
+									<a href="./pollogen-therapy.html" class="link"
+										><ion-icon name="checkmark-circle"></ion-icon
+										>پلاژن‌تراپی<ion-icon name="caret-back-outline"></ion-icon
+									></a>
+								</h3>
+								<p class="list-desc">
+									مناسب برای افرادی که میخواهند پوست جوانی داشته باشند و یا
+									میخواهند مراقبت پوستی انجام دهند.
+								</p>
+							</li>
+						</div>
+						<div>
+							<li>
+								<img
+									src="/img/services/pollogen-therapy1.jpg"
+									alt="A customer receiving some skincare services"
+									class="list-img"
+								/>
+								<img
+									src="/img/services/super-facial1.jpg"
+									alt="A customer receiving some skincare services"
+									class="list-img"
+								/>
+							</li>
+						</div>
+						<div>
+							<li>
+								<h3 class="header-teritiary">
+									<a href="./led-tunnel.html" class="link"
+										><ion-icon name="checkmark-circle"></ion-icon>تونل
+										ال‌ای‌دی<ion-icon name="caret-back-outline"></ion-icon
+									></a>
+								</h3>
+								<p class="list-desc">
+									این فرایند برای جذب بهتر مواد، آنتی‌باکتریال سازی پوست و
+									جوانسازی تاثیر فراوانی دارد.
+								</p>
+							</li>
+						</div>
+						<div>
+							<li>
+								<img
+									src="/img/services/tunnel1.jpg"
+									alt="A customer receiving some skincare services"
+									class="list-img"
+								/>
+								<img
+									src="/img/services/tunnel2.jpg"
+									alt="A customer receiving some skincare services"
+									class="list-img"
+								/>
+							</li>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-positive-points" id="positive-points">
+				<div class="container grid grid--4-cols">
+					<div class="features">
+						<ion-icon name="leaf-outline" class="feature-icon"></ion-icon>
+						<p class="feature-title">سلامت پوست شما</p>
+						<p class="feature-text">
+							اکثر عارضه های پوستی به دلیل آلودگی پوست یا بی توجهی به سلامت پوست
+							بروز میکنند.
+						</p>
+					</div>
+					<div class="features">
+						<ion-icon name="nutrition-outline" class="feature-icon"></ion-icon>
+						<p class="feature-title">زیبایی در مسیر سلامتی</p>
+						<p class="feature-text">
+							برخی از افراد تصور میکنند که انجام فیشیال های پوستی تنها مختص
+							افرادی است که عارضه های پوستی دارند.
+						</p>
+					</div>
+					<div class="features">
+						<ion-icon name="heart-outline" class="feature-icon"></ion-icon>
+						<p class="feature-title">زلال مثل آب</p>
+						<p class="feature-text">
+							زیبایی و سلامتی از بارزترین ویژگی‌های افراد هستند و همین اهمیت
+							رسیدگی به آن را چند برابر می کند.
+						</p>
+					</div>
+					<div class="features">
+						<ion-icon name="diamond-outline" class="feature-icon"></ion-icon>
+						<p class="feature-title">همیشه بدرخشید</p>
+						<p class="feature-text">
+							بیایید با هم، به دنیایی از زیبایی و خوشایندی خوش آمدید بگوییم!
+						</p>
 					</div>
 				</div>
 			</section>
@@ -225,7 +406,7 @@
 			</section>
 			<section class="section-socials">
 				<div class="container">
-					<h3 class="center-text subheading">فضای مجازی</h3>
+					<p class="center-text subheading">فضای مجازی</p>
 					<h2 class="center-text header-secondary">
 						ما را دنبال کنید و همراه ما باشید
 					</h2>
