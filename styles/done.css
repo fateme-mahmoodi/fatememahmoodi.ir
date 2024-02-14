@@ -1,1 +1,14 @@
-body{background-color:var(--tint-one)}main .container{height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}main .container h3{line-height:1.5}
+body {
+	background-color: var(--tint-one);
+}
+main .container {
+	height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+main .container h3 {
+	line-height: 1.5;
+}
