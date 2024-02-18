@@ -1,3 +1,4 @@
 img/services/not-processed
 img/compressed
 max/*
+redirect_template.html

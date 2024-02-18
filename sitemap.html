@@ -86,7 +86,11 @@
 				/>
 			</svg>
 		</span>
-
+		<a
+			href="javascript:window.history.back();"
+			class="btn btn--outline backToPrevPage"
+			>به صفحه قبلی برگردید</a
+		>
 		<main class="container">
 			<h1 class="header-primary">fatememahmoodi.ir Sitemap</h1>
 			<ul class="list">
@@ -288,7 +292,7 @@
 				scrollToTop();
 				backToTopBtn.blur();
 			});
-			document.querySelectorAll("a").forEach((link) => {
+			document.querySelectorAll(".link").forEach((link) => {
 				link.textContent = link.getAttribute("href");
 			});
 		</script>
